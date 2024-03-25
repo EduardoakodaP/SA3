@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kung Fu Panda - Página Inicial</title>
+    <style>
+        /* Títulos e botões */
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Quadro da sinopse */
+        #sinopse {
+            background-color: #f0f0f0;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            width: 80%;
+            max-width: 800px;
+            text-align: center;
+        }
+
+        /* Lista de lançamentos */
+        ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        li {
+            margin-bottom: 20px;
+            width: 45%; /* Define a largura de cada item */
+        }
+
+        img {
+            width: 300px;
+            height: 400px;
+            display: 0;
+            margin: 0 auto;
+        }
+
+        /* Botões */
+        .button-container {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .custom-button {
+            border-radius: 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-right: 10px;
+        }
+
+        .custom-button:hover {
+            background-color: #45a049;
+        }
+
+        /* Quadro */
+        .frame {
+            background-color: black;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            width: calc(50% - 20px); 
+            display: inline-block;
+            vertical-align: top; 
+        }
+
+        .frame img {
+            width: 100%;
+            height: auto;
+        }
+
+        .frame h3 {
+            color: white;
+            text-align: center;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Botões -->
+    <div class="button-container">
+        <a href="{% url 'autores' %}"><button class="custom-button">AUTORES</button></a>
+        <a href="{% url 'fotos' %}"><button class="custom-button">FOTOS</button></a>
+    </div>
+
+    <h1>Kung Fu Panda</h1>
+
+    <!-- Quadro da sinopse -->
+    <div id="sinopse">
+        <h2>Sinopse da próxima aventura:</h2>
+        <p>Depois de três aventuras arriscando sua própria vida para derrotar os mais poderosos vilões, Po, o Grande Dragão Guerreiro (Jack Black), é escolhido para se tornar o Líder Espiritual do Vale da Paz.
+        A escolha em si já problemática ao colocar o mestre de kung fu mais improvável do mundo em um cargo como esse, e além disso, ele precisa encontrar e treinar um novo Dragão Guerreiro antes de assumir a honrada posição
+        A pessoa certa parece ser Zhen (Awkwafina), uma raposa com muitas habilidades, mas que não gosta muito da ideia de ser treinada.
+        Como se os desafios já não fossem o bastante, a Camaleoa (Viola Davis), uma feiticeira perversa, tenta trazer de volta todos os vilões derrotados por Po do reino espiritual.</p>
+    </div>
+    
+    <h2>Data de Lançamento:</h2>
+    <ul>
+        <li>
+            <div class="frame">
+                <img src="https://www.secbotucatu.org.br/site/wp-content/uploads/2017/06/Kung-Fu-Panda.jpg" alt="Poster Kung Fu Panda">
+                <h3>Kung Fu Panda - 6 de junho de 2008</h3>
+            </div>
+        </li>
+        <li>
+            <div class="frame">
+                <img src="https://i.ebayimg.com/images/g/jlQAAOSwiqFaXUbH/s-l1200.webp" alt="Poster Kung Fu Panda 2">
+                <h3>Kung Fu Panda 2 - 26 de maio de 2011</h3>
+            </div>
+        </li>
+        <li>
+            <div class="frame">
+                <img src="https://br.web.img3.acsta.net/r_1280_720/pictures/15/12/22/16/33/057277.jpg" alt="Poster Kung Fu Panda 3">
+                <h3>Kung Fu Panda 3 - 29 de janeiro de 2016</h3>
+            </div>
+        </li>
+        <li>
+            <div class="frame">
+                <img src="https://cinema10.com.br/upload/noticias/noticias-kung-fu-pandaposter.png" alt="Poster Kung Fu Panda 4">
+                <h3>Kung Fu Panda 4 - 21 de março de 2024</h3>
+            </div>
+        </li>
+    </ul>
+
+    <p>Para mais informações, visite <a href="https://www.adorocinema.com/filmes/filme-306226/" target="_blank">a página Adorocinema sobre Kung Fu Panda 4</a>.</p>
+
+</body>
+</html>
+

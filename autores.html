@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roteiristas e Personagens - Kung Fu Panda</title>
+
+    <style>
+        /* Botões */
+        .custom-button {
+            border-radius: 20px; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            padding: 10px 20px; 
+            background-color: #4CAF50;
+            color: white; 
+            border: none; 
+            cursor: pointer; 
+            transition: background-color 0.3s; 
+        }
+
+        .custom-button:hover {
+            background-color: #45a049; 
+        }
+
+        .button-container {
+            margin-top: 20px;
+        }
+
+        /* Foto */
+        .photo-container {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+        }
+
+        .photo-container img {
+            width: 600px; 
+            height: 400px; 
+            margin-bottom: 10px; 
+        }
+    </style>
+
+</head>
+<body>
+    <div class="button-container">
+        <a href="{% url 'fotos' %}"><button class="custom-button">FOTOS</button></a>
+        <a href="{% url 'home' %}"><button class="custom-button">HOME</button></a>
+    </div>
+
+    <h2>Autores/Roteiro:</h2>
+    <div class="photo-container">
+        <img src="https://i.ytimg.com/vi/iq3H7ewMRfk/maxresdefault.jpg" alt="Foto de Autores/Roteiro">
+    </div>
+
+    <ul>
+        <li>Jonathan Aibel</li>
+        <li>Glenn Berger</li>
+    </ul>
+
+    <h2>Personagens Interpretados:</h2>
+    <h3>Kung Fu Panda:</h3>
+    <ul>
+        <li><strong>Po:</strong> Jack Black</li>
+        <li><strong>Tigresa:</strong> Angelina Jolie</li>
+        <li><strong>Macaco:</strong> Jackie Chan</li>
+        <li><strong>Mestre Shifu:</strong> Dustin Hoffman</li>
+        <li><strong>Garça:</strong> David Cross</li>
+        <li><strong>Víbora:</strong> Lucy Liu</li>
+        <li><strong>Louva-a-Deus:</strong> Seth Rogen</li>
+    </ul>
+
+    <h3>Kung Fu Panda 2:</h3>
+    <ul>
+        <li><strong>Senhor Ping:</strong> James Hong</li>
+        <li><strong>Shen:</strong> Gary Oldman</li>
+    </ul>
+
+    <h3>Kung Fu Panda 3:</h3>
+    <ul>
+        <li><strong>Li Shan:</strong> Bryan Cranston</li>
+        <li><strong>Mei Mei:</strong> Kate Hudson</li>
+        <li><strong>Oogway:</strong> Randall Duk Kim</li>
+    </ul>
+
+    <p>Para mais informações, visite <a href="https://www.adorocinema.com/filmes/filme-306226/" target="_blank">a página Adorocinema sobre Kung Fu Panda 4</a>.</p>
+
+
+</body>
+</html>

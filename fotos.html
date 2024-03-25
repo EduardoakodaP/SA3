@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elenco do próximo filme - Kung Fu Panda 4</title>
+
+    <style>
+        /* Botões */
+        .custom-button {
+            border-radius: 20px; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            padding: 10px 20px;
+            background-color: #4CAF50; 
+            color: white; 
+            border: none; 
+            cursor: pointer; 
+            transition: background-color 0.3s; 
+        }
+
+        .custom-button:hover {
+            background-color: #45a049;
+        }
+
+        .button-container {
+            margin-top: 20px;
+        }
+
+        .character h3 {
+            margin-bottom: 0; 
+        }
+
+        .character img {
+            width: 500px; 
+            height: 400px; 
+            margin-top: 10px; 
+        }
+
+    </style>
+
+    <style>
+        .character,h2,p,div {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="button-container">
+        <a href="{% url 'autores' %}"><button class="custom-button">AUTORES</button></a>
+        <a href="https://www.youtube.com/watch?v=yzXz9r5EyxU&ab_channel=UniversalPicturesBrasil" target="_blank"><button class="custom-button">TRAILER</button></a>
+        <a href="{% url 'home' %}"><button class="custom-button">HOME</button></a>
+    </div>
+
+    <h2>Elenco Kung Fu Panda 4:</h2>
+    <div class="character">
+        <h3>Po / Jack Black</h3>
+        <img src="https://universocinema.com.br/wp-content/uploads/2024/03/Kung-Fu-Panda-Jack-Black-em-seu-retorno-quotPos-e.jpg" alt="Imagem de Po">
+    </div>
+
+    <div class="character">
+        <h3>Tigresa / Angelina Jolie</h3>
+        <img src="https://i2.wp.com/lojamundogeek.com.br/wp-content/uploads/2023/10/O-proximo-filme-de-Angelina-Jolie-quebrara-um-recorde-de-1024x512.jpg" alt="Imagem de Tigresa">
+    </div>
+
+    <div class="character">
+        <h3>Camaleoa / Viola Davis</h3>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjwve3MnkdPnUyZdKD45kjBYxNCbUu-6ld7g&usqp=CAU" alt="Imagem de Camaleoa">
+    </div>
+
+    <div class="character">
+        <h3>Mestre Shifu / Dustin Hoffman</h3>
+        <img src="https://images.thedirect.com/media/photos/2dustinhoffman.png" alt="Imagem de Mestre Shifu">
+    </div>
+
+    <p>Para mais informações, visite <a href="https://www.adorocinema.com/filmes/filme-306226/" target="_blank">a página Adorocinema sobre Kung Fu Panda 4</a>.</p>
+
+</body>
+</html>
